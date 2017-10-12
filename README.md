@@ -1,5 +1,5 @@
 # graphQLexploration
-learning graphQL
+exploring graphQL
 
 npm install
 npm run start
