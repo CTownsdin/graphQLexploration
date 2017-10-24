@@ -4,8 +4,9 @@
   "description": "learning graphQL",
   "main": "index.js",
   "scripts": {
-    "state": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint:fix": "standard --fix | snazzy"
   },
   "repository": {
     "type": "git",
@@ -18,8 +19,14 @@
   },
   "homepage": "https://github.com/CTownsdin/graphQLexploration#readme",
   "dependencies": {
+    "axios": "^0.17.0",
     "express": "^4.16.2",
     "express-graphql": "^0.6.11",
     "graphql": "^0.11.7"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1",
+    "snazzy": "^7.0.0",
+    "standardjs": "^1.0.0-alpha"
   }
 }
